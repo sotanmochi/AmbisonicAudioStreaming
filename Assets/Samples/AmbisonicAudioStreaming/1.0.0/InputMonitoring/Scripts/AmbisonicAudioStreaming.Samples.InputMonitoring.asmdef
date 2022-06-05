@@ -1,0 +1,17 @@
+{
+    "name": "AmbisonicAudioStreaming.Samples",
+    "rootNamespace": "",
+    "references": [
+        "AmbisonicAudioStreaming",
+        "SoundIO.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
