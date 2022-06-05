@@ -21,7 +21,7 @@
 ```
 {
   "dependencies": {
-    "jp.sotanmochi.ambisonicaudiostreaming" : "",
+    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming",
     ...
   }
 }
@@ -46,7 +46,7 @@
     }
   ],
   "dependencies": {
-    "jp.sotanmochi.ambisonicaudiostreaming" : "",
+    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming",
     "org.nuget.system.memory": "4.5.3",
     "jp.keijiro.libsoundio": "1.0.4",
     ...
