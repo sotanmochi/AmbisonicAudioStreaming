@@ -1,0 +1,14 @@
+{
+    "name": "jp.sotanmochi.ambisonicaudiostreaming",
+    "version": "1.0.0",
+    "displayName": "AmbisonicAudioStreaming",
+    "license": "MIT",
+    "unity": "2020.3",
+    "author": { "name": "Soichiro Sugimoto" },
+    "samples": [
+        {
+            "displayName": "InputMonitoring",
+            "path": "Samples~/InputMonitoring"
+        }
+    ]
+}
