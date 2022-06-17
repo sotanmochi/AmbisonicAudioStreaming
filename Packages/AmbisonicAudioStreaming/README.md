@@ -5,6 +5,10 @@
 - Audio Interface: [Zoom H3-VR](https://zoomcorp.com/ja/jp/handheld-recorders/handheld-recorders/h3-vr-360-audio-recorder/) 4ch Ambisonics mode (AmbiX)
 
 ## Dependencies
+- [Resonance Audio SDK for Unity v1.2.1](https://github.com/resonance-audio/resonance-audio-unity-sdk/releases/tag/v1.2.1)  
+  Licensed under the Apache License, Version 2.0.  
+  Copyright (c) 2018 Google Inc.
+
 ### Samples/InputMonitoring
 - [libsoundio 1.0.4](https://github.com/keijiro/jp.keijiro.libsoundio/tree/1.0.4)  
   Licensed under the MIT License. Copyright (c) 2015 Andrew Kelley
