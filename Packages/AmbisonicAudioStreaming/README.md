@@ -62,3 +62,7 @@
   }
 }
 ```
+
+## Project Settings
+
+<image src="./Documentation~/ProjectSettings.png" width="75%">
