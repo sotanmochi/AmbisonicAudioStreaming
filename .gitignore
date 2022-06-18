@@ -1,3 +1,7 @@
+# Third party assets
+Assets/AgoraEngine
+Assets/ThirdParty/AgoraEngine
+
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
