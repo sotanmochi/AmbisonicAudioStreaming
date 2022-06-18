@@ -11,7 +11,10 @@
       "scopes": [ "jp.keijiro" ]
     }
   ],
-  "dependencies": {
+  "dependencies": {    
+    "jp.sotanmochi.agora-extension": "https://github.com/sotanmochi/AgoraExtension-Unity.git?path=AgoraExtension-Unity/Packages/AgoraExtension",
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.3.1",
+    "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
     "org.nuget.system.memory": "4.5.3",
     "jp.keijiro.libsoundio": "1.0.4",
     "com.unity.collab-proxy": "1.15.7",

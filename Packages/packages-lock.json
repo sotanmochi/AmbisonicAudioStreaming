@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "com.cysharp.unitask": {
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.3.1",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "33d32baea4d50040e0601b725a694dcf3dcf6640"
+    },
+    "com.neuecc.unirx": {
+      "version": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "284d5c50d3f1ddd9fa7df3d382ea904732a9c2ff"
+    },
     "com.unity.collab-proxy": {
       "version": "1.15.7",
       "depth": 0,
@@ -105,6 +119,13 @@
       "source": "registry",
       "dependencies": {},
       "url": "https://registry.npmjs.com"
+    },
+    "jp.sotanmochi.agora-extension": {
+      "version": "https://github.com/sotanmochi/AgoraExtension-Unity.git?path=AgoraExtension-Unity/Packages/AgoraExtension",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "e213a74d93e6c6faaa4248f28d508eadb32a3156"
     },
     "jp.sotanmochi.ambisonicaudiostreaming": {
       "version": "file:AmbisonicAudioStreaming",
