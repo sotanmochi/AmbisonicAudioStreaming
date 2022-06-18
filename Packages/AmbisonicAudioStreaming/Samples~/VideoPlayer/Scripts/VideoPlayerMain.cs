@@ -4,13 +4,16 @@ using Cysharp.Threading.Tasks;
 
 namespace AmbisonicAudioStreaming.Samples
 {
-    public class VideoPlayerContext : MonoBehaviour
+    /// <summary>
+    /// Entry point
+    /// </summary>
+    public class VideoPlayerMain : MonoBehaviour
     {
         [SerializeField] private VideoAudioSampleProvider _videoAudioSampleProvider;
         [SerializeField] private AmbisonicAudioStreamRenderer _audioStreamRenderer;
 
         private bool _prepared;
-        
+
         private void Awake()
         {
             _videoAudioSampleProvider.OnPrepared += OnPreparedEventHandler;
@@ -39,7 +42,6 @@ namespace AmbisonicAudioStreaming.Samples
 
         private void OnAudioSampledEventHandler(uint sampleCount, ushort channelCount, NativeArray<float> buffer)
         {
-            Debug.Log($"ChannelCount: {channelCount}");
             _audioStreamRenderer.PushAudioFrame(buffer.ToArray());
         }
     }
