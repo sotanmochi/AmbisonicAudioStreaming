@@ -2,7 +2,7 @@
 
 ## Tested Environment
 - Unity 2020.3.27f1
-- Audio Interface: [Zoom H3-VR](https://zoomcorp.com/ja/jp/handheld-recorders/handheld-recorders/h3-vr-360-audio-recorder/) 4ch Ambisonics mode (AmbiX)
+- Microphone & Audio Interface: [Zoom H3-VR](https://zoomcorp.com/ja/jp/handheld-recorders/handheld-recorders/h3-vr-360-audio-recorder/) 4ch Ambisonics mode (AmbiX)
 
 ## Third party assets
 このプロジェクトには、以下のアセットが含まれています。  
@@ -21,7 +21,10 @@ The following assets are included in this project.
   Licensed under the MIT License. Copyright (c) .NET Foundation and Contributors
 
 ### Samples/Streaming
+- [Agora Extension for Unity](https://github.com/sotanmochi/AgoraExtension-Unity)  
+  Licensed under the MIT License. Copyright (c) 2021 Soichiro Sugimoto
 
+- [Agora Video SDK for Unity v3.7.0 (May 9, 2022)](https://assetstore.unity.com/packages/tools/video/agora-video-sdk-for-unity-134502)
 
 ## How to install
 `Packages/manifest.json`
@@ -55,6 +58,8 @@ The following assets are included in this project.
   ],
   "dependencies": {
     "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming",
+    "jp.sotanmochi.agora-extension": "https://github.com/sotanmochi/AgoraExtension-Unity.git?path=AgoraExtension-Unity/Packages/AgoraExtension",
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.3.1",
     "org.nuget.system.memory": "4.5.3",
     "jp.keijiro.libsoundio": "1.0.4",
     ...
