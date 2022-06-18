@@ -16,7 +16,7 @@
 - [System.Memory 4.5.3](https://www.nuget.org/packages/System.Memory/4.5.3)  
   Licensed under the MIT License. Copyright (c) .NET Foundation and Contributors
 
-### Samples/Streaming
+### Samples/LiveStreaming
 - [Agora Extension for Unity](https://github.com/sotanmochi/AgoraExtension-Unity)  
   Licensed under the MIT License. Copyright (c) 2021 Soichiro Sugimoto
 
