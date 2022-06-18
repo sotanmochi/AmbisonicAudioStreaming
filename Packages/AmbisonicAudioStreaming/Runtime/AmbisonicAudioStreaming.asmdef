@@ -1,9 +1,7 @@
 {
     "name": "AmbisonicAudioStreaming",
     "rootNamespace": "",
-    "references": [
-        "UniTask"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

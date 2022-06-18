@@ -1,6 +1,6 @@
 using System;
+using Unity.Collections;
 using UnityEngine;
-using Cysharp.Threading.Tasks;
 
 namespace AmbisonicAudioStreaming
 {
@@ -20,10 +20,10 @@ namespace AmbisonicAudioStreaming
         private int _samplingRate;
         private int _audioClipSamples;
         private int _delaySamples;
-
-        private float[] _buffer = Array.Empty<float>();
-        private int _bufferLengthBytes;
         private int _head;
+
+        private RingBuffer<float> _ringBuffer = new RingBuffer<float>(Int16.MaxValue * 8);
+        private float[] _readBuffer = new float[4096];
 
         private bool _initialized;
 
@@ -46,31 +46,40 @@ namespace AmbisonicAudioStreaming
 
             _delaySamples = (int)(_samplingRate * _delayTimeSeconds);
 
+            Debug.Log($"[AmbisonicAudioStreamRenderer] RingBuffer.Capacity: {_ringBuffer.Capacity}");
+
             _initialized = true;
         }
 
-        public async void PushAudioFrame(float[] data)
+        private void Update()
+        {
+            if (_ringBuffer.Count > _readBuffer.Length)
+            { 
+                _ringBuffer.Dequeue(_readBuffer);
+
+                _audioClip.SetData(_readBuffer, _head);
+                
+                _head += _readBuffer.Length / _channels;
+                _head %= _audioClipSamples;
+ 
+                if (!_audioSource.isPlaying && _head > _delaySamples)
+                {
+                    _audioSource.Play();
+                }
+            }
+        }
+
+        public void PushAudioFrame(float[] data)
         {
             if (!_initialized) { return; }
-            
-            if (_buffer.Length != data.Length)
-            {
-                _buffer = new float[data.Length];
-                _bufferLengthBytes = _buffer.Length * 4;
-            }
-            
-            await UniTask.SwitchToMainThread();
-            
-            Buffer.BlockCopy(data, 0, _buffer, 0, _bufferLengthBytes);
-            _audioClip.SetData(_buffer, _head);
-            
-            _head += data.Length / _channels;
-            _head %= _audioClipSamples;
-            
-            if (!_audioSource.isPlaying && _head > _delaySamples)
-            {
-                _audioSource.Play();
-            }
+            _ringBuffer.Enqueue(data);
+        }
+
+        public void PushAudioFrame(NativeArray<float> data)
+        {
+            throw new NotImplementedException();
+            // if (!_initialized) { return; }
+            // _ringBuffer.Enqueue(data);
         }
 
         public void Clear()

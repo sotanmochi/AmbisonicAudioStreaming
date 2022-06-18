@@ -299,7 +299,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -962,7 +962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 2136398414}
   _scaleFactor: 0.3
-  _uiView: {fileID: 0}
+  _uiView: {fileID: 1729590074}
 --- !u!114 &1729590074
 MonoBehaviour:
   m_ObjectHideFlags: 0
