@@ -1,0 +1,17 @@
+{
+    "name": "AmbisonicAudioStreaming.Samples.VideoPlayer",
+    "rootNamespace": "",
+    "references": [
+        "AmbisonicAudioStreaming",
+        "UniTask"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
