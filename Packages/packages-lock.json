@@ -120,13 +120,6 @@
       "dependencies": {},
       "url": "https://registry.npmjs.com"
     },
-    "jp.sotanmochi.agora-extension": {
-      "version": "https://github.com/sotanmochi/AgoraExtension-Unity.git?path=AgoraExtension-Unity/Packages/AgoraExtension",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "e213a74d93e6c6faaa4248f28d508eadb32a3156"
-    },
     "jp.sotanmochi.ambisonicaudiostreaming": {
       "version": "file:AmbisonicAudioStreaming",
       "depth": 0,
