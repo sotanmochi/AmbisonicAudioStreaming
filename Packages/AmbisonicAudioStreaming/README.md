@@ -25,6 +25,8 @@
 ## How to install
 `Packages/manifest.json`
 
+<details>
+<summary>.NET Standard 2.1 (Unity 2021.2 or later)</summary>
 ```
 {
   "dependencies": {
@@ -33,11 +35,34 @@
   }
 }
 ```
+</details>
+
+<details>
+<summary>.NET Standard 2.0 (Unity 2021.1 or earlier)</summary>
+```
+{
+  "dependencies": {
+    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming",
+    "org.nuget.system.memory": "4.5.3",
+    ...
+  },
+  "scopedRegistries": [
+    {
+      "name": "Unity NuGet",
+      "url": "https://unitynuget-registry.azurewebsites.net",
+      "scopes": [ "org.nuget" ]
+    },
+    ...
+  ],
+}
+```
+</details>
 
 ## How to install for Samples
 `Packages/manifest.json`
 
-### .NET Standard 2.0 (Unity 2021.1 or earlier)
+<details>
+<summary>.NET Standard 2.0 (Unity 2021.1 or earlier)</summary>
 ```
 {
   "scopedRegistries": [
@@ -62,6 +87,7 @@
   }
 }
 ```
+</details>
 
 ## Project Settings
 
