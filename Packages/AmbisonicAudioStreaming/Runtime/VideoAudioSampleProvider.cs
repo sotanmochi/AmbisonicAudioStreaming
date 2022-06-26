@@ -23,7 +23,7 @@ namespace AmbisonicAudioStreaming
         private VideoPlayer _videoPlayer;
         private AudioSampleProvider _audioSampleProvider;
         
-        private void Awake()
+        private void Start()
         {
             _videoPlayer = GetComponent<VideoPlayer>();
             _videoPlayer.audioOutputMode = VideoAudioOutputMode.APIOnly;
@@ -34,7 +34,10 @@ namespace AmbisonicAudioStreaming
         
         private void OnDestroy()
         {
-            _videoPlayer.prepareCompleted -= PreparedEventHandler;
+            if (_videoPlayer != null)
+            {
+                _videoPlayer.prepareCompleted -= PreparedEventHandler;
+            }
         }
         
         private void PreparedEventHandler(VideoPlayer videoPlayer)
