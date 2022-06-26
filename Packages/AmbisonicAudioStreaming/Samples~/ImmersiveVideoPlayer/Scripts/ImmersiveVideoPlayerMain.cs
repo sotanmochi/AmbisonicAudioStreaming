@@ -7,7 +7,7 @@ namespace AmbisonicAudioStreaming.Samples
     /// <summary>
     /// Entry point
     /// </summary>
-    public class VideoPlayerMain : MonoBehaviour
+    public class ImmersiveVideoPlayerMain : MonoBehaviour
     {
         [SerializeField] private VideoAudioSampleProvider _videoAudioSampleProvider;
         [SerializeField] private AmbisonicAudioStreamRenderer _audioStreamRenderer;
