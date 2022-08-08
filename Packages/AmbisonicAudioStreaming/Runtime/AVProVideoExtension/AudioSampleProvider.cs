@@ -1,4 +1,6 @@
 using System;
+using System.Diagnostics;
+using System.Threading;
 using UnityEngine;
 using RenderHeads.Media.AVProVideo;
 
@@ -20,10 +22,16 @@ namespace AmbisonicAudioStreaming.AVProVideoExtension
         public event Action OnPrepared;
         public event AudioFrameSampledEventHandler OnAudioSampled;
 
+        private static readonly double TimestampsToTicks = TimeSpan.TicksPerSecond / (double)Stopwatch.Frequency;
+        private static readonly int TargetFrameTimeMilliseconds = (int)(1000.0f / 60); // 60[fps]
+
         private IMediaControl _mediaControl = null;
         private ushort _outputChannelCount;
         private float[] _outputPcmBuffer = null;
         private float[] _pcmBuffer = null;
+
+        private Thread _audioThread;
+        private CancellationTokenSource _cancellationTokenSource;
 
         void Awake()
         {
@@ -38,31 +46,52 @@ namespace AmbisonicAudioStreaming.AVProVideoExtension
 
         void Start()
         {
-
+            _cancellationTokenSource = new CancellationTokenSource();
+            _audioThread = new Thread(AudioLoop);
+            _audioThread.Start();
         }
 
         void OnDestroy()
         {
-
+            _cancellationTokenSource.Cancel();
         }
 
-        void Update()
+        private void AudioLoop()
+        {
+            while (!_cancellationTokenSource.IsCancellationRequested)
+            {
+                var begin = Stopwatch.GetTimestamp();
+
+                UpdateAudio();
+
+                var end = Stopwatch.GetTimestamp();
+                var elapsedTicks = (end - begin) * TimestampsToTicks;
+                var elapsedMilliseconds = (long)elapsedTicks / TimeSpan.TicksPerMillisecond;
+
+                // UnityEngine.Debug.Log($"AudioThread: {elapsedMilliseconds}[ms]");
+
+                var waitForNextFrameMilliseconds = (int)(TargetFrameTimeMilliseconds - elapsedMilliseconds);
+                if (waitForNextFrameMilliseconds > 0)
+                {
+                    Thread.Sleep(waitForNextFrameMilliseconds);
+                }
+            }
+        }
+
+        private void UpdateAudio()
         {
             if (_mediaControl is null)
             {
                 _mediaControl = _mediaPlayer.Control;
             }
 
-            if (_mediaControl != null && _mediaControl.IsPlaying())
+            if (_mediaControl is null || !_mediaControl.IsPlaying())
             {
-                UpdateAudio();
+                return;
             }
-        }
 
-        public void UpdateAudio()
-        {
             var channelCount = (ushort)_mediaControl.GetAudioChannelCount();
-            // Debug.Log($"UpdateAudio.ChannelCount: {channelCount}");
+            // UnityEngine.Debug.Log($"UpdateAudio.ChannelCount: {channelCount}");
 
             if (channelCount <= 0)
             {
