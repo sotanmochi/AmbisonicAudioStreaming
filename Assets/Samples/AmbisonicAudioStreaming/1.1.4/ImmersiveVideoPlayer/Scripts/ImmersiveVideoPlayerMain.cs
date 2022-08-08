@@ -40,9 +40,9 @@ namespace AmbisonicAudioStreaming.Samples
             Debug.Log($"[VideoPlayerContext] VideoAudioSampleProvider.ChannelCount: {channelCount}");
         }
 
-        private void OnAudioSampledEventHandler(uint sampleCount, ushort channelCount, NativeArray<float> buffer)
+        private void OnAudioSampledEventHandler(uint sampleCount, ushort channelCount, float[] buffer)
         {
-            _audioStreamRenderer.PushAudioFrame(buffer.ToArray());
+            _audioStreamRenderer.PushAudioFrame(buffer);
         }
     }
 }
