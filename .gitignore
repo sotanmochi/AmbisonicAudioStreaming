@@ -2,6 +2,16 @@
 Assets/AgoraEngine
 Assets/ThirdParty/AgoraEngine
 
+Assets/StreamingAssets
+Assets/StreamingAssets.meta
+
+Assets/AVProVideo
+Assets/AVProVideo.meta
+Assets/StreamingAssets/AVProVideoSamples
+Assets/StreamingAssets/AVProVideoSamples.meta
+
+.idea/
+
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
