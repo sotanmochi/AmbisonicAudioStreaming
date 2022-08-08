@@ -250,7 +250,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 171312599}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e2ca67b54830154bb2d3fdfe69748c7, type: 3}
+  m_Script: {fileID: 11500000, guid: df87f2edabe24004cbe2486c16b52ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &420562127
@@ -521,7 +521,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1010370819}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e2ca67b54830154bb2d3fdfe69748c7, type: 3}
+  m_Script: {fileID: 11500000, guid: df87f2edabe24004cbe2486c16b52ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1102528640
@@ -754,7 +754,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1364907936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e2ca67b54830154bb2d3fdfe69748c7, type: 3}
+  m_Script: {fileID: 11500000, guid: df87f2edabe24004cbe2486c16b52ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1384563494
@@ -1105,8 +1105,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1729590071}
   - component: {fileID: 1729590075}
-  - component: {fileID: 1729590073}
   - component: {fileID: 1729590074}
+  - component: {fileID: 1729590072}
   m_Layer: 0
   m_Name: EntryPoint
   m_TagString: Untagged
@@ -1128,7 +1128,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1729590073
+--- !u!114 &1729590072
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1137,12 +1137,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1729590070}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f553c6d9ad7144d409ed48969f1ff4fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 270aa8fa9cf6aa243ba7a005f531844f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 2136398414}
-  _scaleFactor: 0.3
-  _uiView: {fileID: 1729590074}
+  _upButton: {fileID: 1747139482}
+  _downButton: {fileID: 1364907941}
+  _leftButton: {fileID: 1010370824}
+  _rightButton: {fileID: 171312604}
 --- !u!114 &1729590074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1152,13 +1153,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1729590070}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3238d879cc0b64042b3737f3aeb33287, type: 3}
+  m_Script: {fileID: 11500000, guid: cfad241b2ace3d34c96095d78d976a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _upButton: {fileID: 1747139482}
-  _downButton: {fileID: 1364907941}
-  _leftButton: {fileID: 1010370824}
-  _rightButton: {fileID: 171312604}
+  _camera: {fileID: 2136398414}
+  _scaleFactor: 0.3
+  _uiView: {fileID: 1729590072}
 --- !u!114 &1729590075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1747139477}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e2ca67b54830154bb2d3fdfe69748c7, type: 3}
+  m_Script: {fileID: 11500000, guid: df87f2edabe24004cbe2486c16b52ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2136398411
