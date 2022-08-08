@@ -43,7 +43,7 @@ namespace AmbisonicAudioStreaming.AVProVideoExtension
 
         void OnDestroy()
         {
-            
+
         }
 
         void Update()
@@ -85,21 +85,36 @@ namespace AmbisonicAudioStreaming.AVProVideoExtension
                 uint readPos = 0;
                 uint writePos = 0;
 
-                var lesserChannels = Math.Min(channelCount, _outputChannelCount);
-
-                // Debug.Log($"channelCount: {channelCount}");
-                // Debug.Log($"OutputChannelCount: {_outputChannelCount}");
-                // Debug.Log($"LesserChannels: {lesserChannels}");
-
-                for (int i = 0; i < _bufferSampleCount; ++i)
+                // Special case
+                // Streaming ambisonic audio data (AmbiX format) using HLS with 5.1-channel codec mode.
+                if (channelCount == 6 && _outputChannelCount == 4)
                 {
-                    for (int j = 0; j < lesserChannels; ++j)
+                    for (int i = 0; i < _bufferSampleCount; ++i)
                     {
-                        _outputPcmBuffer[writePos + j] = _pcmBuffer[readPos + j];
-                    }
+                        _outputPcmBuffer[writePos + 0] = _pcmBuffer[readPos + 0]; // W <- L
+                        _outputPcmBuffer[writePos + 1] = _pcmBuffer[readPos + 1]; // Y <- R
+                        _outputPcmBuffer[writePos + 2] = _pcmBuffer[readPos + 4]; // Z <- Ls
+                        _outputPcmBuffer[writePos + 3] = _pcmBuffer[readPos + 5]; // X <- Rs
 
-                    readPos += channelCount;
-                    writePos += _outputChannelCount;
+                        readPos += channelCount;
+                        writePos += _outputChannelCount;
+                    }
+                }
+                // General case
+                else
+                {
+                    var lesserChannels = Math.Min(channelCount, _outputChannelCount);
+
+                    for (int i = 0; i < _bufferSampleCount; ++i)
+                    {
+                        for (int j = 0; j < lesserChannels; ++j)
+                        {
+                            _outputPcmBuffer[writePos + j] = _pcmBuffer[readPos + j];
+                        }
+
+                        readPos += channelCount;
+                        writePos += _outputChannelCount;
+                    }
                 }
 
                 OnAudioSampled?.Invoke(_bufferSampleCount, _outputChannelCount, _outputPcmBuffer);
