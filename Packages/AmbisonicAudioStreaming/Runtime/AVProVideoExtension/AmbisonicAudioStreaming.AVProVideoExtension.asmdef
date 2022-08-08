@@ -2,7 +2,8 @@
     "name": "AmbisonicAudioStreaming.AVProVideoExtension",
     "rootNamespace": "",
     "references": [
-        "AVProVideo.Runtime"
+        "AVProVideo.Runtime",
+        "AmbisonicAudioStreaming"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
