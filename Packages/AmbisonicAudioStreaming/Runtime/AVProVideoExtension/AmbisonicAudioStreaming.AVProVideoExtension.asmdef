@@ -1,0 +1,19 @@
+{
+    "name": "AmbisonicAudioStreaming.AVProVideoExtension",
+    "rootNamespace": "",
+    "references": [
+        "AVProVideo.Runtime",
+        "AmbisonicAudioStreaming"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "AVPRO_VIDEO_AMBISONIC_AUDIO_STREAMING"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,19 @@
+{
+    "name": "AmbisonicAudioStreaming.Samples.VideoPlayer.AVProVideo",
+    "rootNamespace": "",
+    "references": [
+        "AmbisonicAudioStreaming",
+        "AmbisonicAudioStreaming.AVProVideoExtension",
+        "AVProVideo.Runtime",
+        "UniTask"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

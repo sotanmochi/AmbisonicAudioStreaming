@@ -7,6 +7,8 @@ namespace AmbisonicAudioStreaming
     [RequireComponent(typeof(AudioSource))]
     public class AmbisonicAudioStreamRenderer : MonoBehaviour
     {
+        [SerializeField] uint _readBufferSize = 8192 * 4;
+
         public int Channels => _channels;
         public int SamplingRate => _samplingRate; // [Hz]
         public int AudioClipSamples => _audioClipSamples;
@@ -23,12 +25,14 @@ namespace AmbisonicAudioStreaming
         private int _head;
 
         private RingBuffer<float> _ringBuffer = new RingBuffer<float>(Int16.MaxValue * 8);
-        private float[] _readBuffer = new float[4096];
+        private float[] _readBuffer;
 
         private bool _initialized;
 
         private void Awake()
         {
+            _readBuffer = new float[_readBufferSize];
+
             _audioSource = GetComponent<AudioSource>();
 
             if (!_audioSource.clip.ambisonic)
@@ -54,7 +58,7 @@ namespace AmbisonicAudioStreaming
         private void Update()
         {
             if (_ringBuffer.Count > _readBuffer.Length)
-            { 
+            {
                 _ringBuffer.Dequeue(_readBuffer);
 
                 _audioClip.SetData(_readBuffer, _head);
