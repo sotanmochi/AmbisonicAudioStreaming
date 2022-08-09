@@ -115,6 +115,10 @@ The following assets are included in this project.
 
 </details>
 
+#### Third party assets
+- [AVPro Video](https://renderheads.com/products/avpro-video/)  
+  Free trial version is available on [GitHub](https://github.com/RenderHeads/UnityPlugin-AVProVideo/releases).
+
 ### InputMonitoring
 `Packages/manifest.json`
 
