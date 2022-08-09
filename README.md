@@ -71,9 +71,12 @@ The following assets are included in this project.
 </details>
 
 ## How to install samples
-`Packages/manifest.json`
+
+<image src="./Packages/AmbisonicAudioStreaming/Documentation~/ImportSamples.png" width="75%">
 
 ### ImmersiveVideoPlayer and ImmersiveVideoPlayer.AVProVideo
+`Packages/manifest.json`
+
 <details>
 <summary>.NET Standard 2.1 (Unity 2021.2 or later)</summary>
 
@@ -113,6 +116,8 @@ The following assets are included in this project.
 </details>
 
 ### InputMonitoring
+`Packages/manifest.json`
+
 <details>
 <summary>.NET Standard 2.0 (Unity 2021.1 or earlier)</summary>
 
@@ -143,6 +148,8 @@ The following assets are included in this project.
 </details>
 
 ### LiveStreaming
+`Packages/manifest.json`
+
 <details>
 <summary>.NET Standard 2.0 (Unity 2021.1 or earlier)</summary>
 
