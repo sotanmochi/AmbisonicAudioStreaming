@@ -174,5 +174,9 @@ The following assets are included in this project.
 </details>
 
 ## Project Settings
-
 <image src="./Documentation~/ProjectSettings.png" width="75%">
+
+### Define symbol for AVProVideo extension
+<image src="./Documentation~/DefineSymbol01.png" width="75%">
+
+<image src="./Documentation~/DefineSymbol02.png" width="75%">

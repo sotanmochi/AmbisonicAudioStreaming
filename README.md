@@ -174,5 +174,9 @@ The following assets are included in this project.
 </details>
 
 ## Project Settings
+<image src="./Packages/AmbisonicAudioStreaming/Documentation~/ProjectSettings.png" width="75%">
 
-<image src="./Package/AmbisonicAudioStreaming/Documentation~/ProjectSettings.png" width="75%">
+### Define symbol for AVProVideo extension
+<image src="./Packages/AmbisonicAudioStreaming/Documentation~/DefineSymbol01.png" width="75%">
+
+<image src="./Packages/AmbisonicAudioStreaming/Documentation~/DefineSymbol02.png" width="75%">
