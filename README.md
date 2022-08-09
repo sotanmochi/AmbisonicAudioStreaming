@@ -30,7 +30,7 @@ The following assets are included in this project.
 
 - [Agora Video SDK for Unity v3.7.0 (May 9, 2022)](https://assetstore.unity.com/packages/tools/video/agora-video-sdk-for-unity-134502)
 
-## How to install
+## How to install package
 `Packages/manifest.json`
 
 <details>
@@ -39,7 +39,7 @@ The following assets are included in this project.
 ```
 {
   "dependencies": {
-    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming",
+    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.0",
     ...
   }
 }
@@ -53,7 +53,7 @@ The following assets are included in this project.
 ```
 {
   "dependencies": {
-    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming",
+    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.0",
     "org.nuget.system.memory": "4.5.3",
     ...
   },
@@ -70,7 +70,7 @@ The following assets are included in this project.
 
 </details>
 
-## How to install for Samples
+## How to install samples
 `Packages/manifest.json`
 
 ### ImmersiveVideoPlayer and ImmersiveVideoPlayer.AVProVideo
@@ -80,7 +80,7 @@ The following assets are included in this project.
 ```
 {
   "dependencies": {
-    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming",
+    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.0",
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.3.1",
     ...
   }
@@ -95,7 +95,7 @@ The following assets are included in this project.
 ```
 {
   "dependencies": {
-    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming",
+    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.0",
     "org.nuget.system.memory": "4.5.3",
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.3.1",
     ...
@@ -119,10 +119,10 @@ The following assets are included in this project.
 ```
 {
   "dependencies": {
-    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming",
-    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.3.1",
+    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.0",
     "org.nuget.system.memory": "4.5.3",
     "jp.keijiro.libsoundio": "1.0.4",
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.3.1",
     ...
   },
   "scopedRegistries": [
@@ -172,3 +172,7 @@ The following assets are included in this project.
 ```
 
 </details>
+
+## Project Settings
+
+<image src="./Package/AmbisonicAudioStreaming/Documentation~/ProjectSettings.png" width="75%">
