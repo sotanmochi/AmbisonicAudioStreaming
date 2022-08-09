@@ -7,14 +7,14 @@ namespace AmbisonicAudioStreaming.AVProVideoExtension.Samples
     /// </summary>
     public class ImmersiveVideoPlayerMain : MonoBehaviour
     {
-#if AMBISONIC_AUDIO_STREAMING_AVPRO_VIDEO
+#if AVPRO_VIDEO_AMBISONIC_AUDIO_STREAMING
         [SerializeField] private AudioSampleProvider _audioSampleProvider;
 #endif
         [SerializeField] private AmbisonicAudioStreamRenderer _audioStreamRenderer;
 
         private bool _prepared;
 
-#if AMBISONIC_AUDIO_STREAMING_AVPRO_VIDEO
+#if AVPRO_VIDEO_AMBISONIC_AUDIO_STREAMING
         private void Awake()
         {
             _audioSampleProvider.OnAudioSampled += OnAudioSampledEventHandler;

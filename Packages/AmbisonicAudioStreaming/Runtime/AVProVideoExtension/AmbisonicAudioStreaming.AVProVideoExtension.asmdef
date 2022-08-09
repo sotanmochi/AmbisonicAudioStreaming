@@ -12,7 +12,7 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [
-        "AMBISONIC_AUDIO_STREAMING_AVPRO_VIDEO"
+        "AVPRO_VIDEO_AMBISONIC_AUDIO_STREAMING"
     ],
     "versionDefines": [],
     "noEngineReferences": false

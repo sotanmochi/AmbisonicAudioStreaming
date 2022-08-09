@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-    <symbol name="AMBISONIC_AUDIO_STREAMING_AVPRO_VIDEO" comment="Ambisonic Audio Streaming using AVPro Video" />
+    <symbol name="AVPRO_VIDEO_AMBISONIC_AUDIO_STREAMING" comment="Use AVProVideo Extension" />
 </root>
