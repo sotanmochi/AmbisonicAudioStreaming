@@ -39,7 +39,7 @@ The following assets are included in this project.
 ```
 {
   "dependencies": {
-    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.0",
+    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.1",
     ...
   }
 }
@@ -53,7 +53,7 @@ The following assets are included in this project.
 ```
 {
   "dependencies": {
-    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.0",
+    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.1",
     "org.nuget.system.memory": "4.5.3",
     ...
   },
@@ -83,7 +83,7 @@ The following assets are included in this project.
 ```
 {
   "dependencies": {
-    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.0",
+    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.1",
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.3.1",
     ...
   }
@@ -98,7 +98,7 @@ The following assets are included in this project.
 ```
 {
   "dependencies": {
-    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.0",
+    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.1",
     "org.nuget.system.memory": "4.5.3",
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.3.1",
     ...
@@ -128,7 +128,7 @@ The following assets are included in this project.
 ```
 {
   "dependencies": {
-    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.0",
+    "jp.sotanmochi.ambisonicaudiostreaming": "https://github.com/sotanmochi/AmbisonicAudioStreaming.git?path=Packages/AmbisonicAudioStreaming#1.2.1",
     "org.nuget.system.memory": "4.5.3",
     "jp.keijiro.libsoundio": "1.0.4",
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.3.1",
@@ -188,6 +188,6 @@ The following assets are included in this project.
 <image src="./Documentation~/ProjectSettings.png" width="75%">
 
 ### Define symbol for AVProVideo extension
-<image src="./Documentation~/DefineSymbol01.png" width="75%">
+<image src="./Samples~/ImmersiveVideoPlayer.AVProVideo/DefineSymbol01.png" width="75%">
 
-<image src="./Documentation~/DefineSymbol02.png" width="75%">
+<image src="./Samples~/ImmersiveVideoPlayer.AVProVideo/DefineSymbol02.png" width="75%">
