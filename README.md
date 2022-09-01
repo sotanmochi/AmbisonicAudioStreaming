@@ -13,6 +13,10 @@ The following assets are included in this project.
   Copyright (c) 2018 Google Inc.
 
 ## Dependencies
+- [Google Resonance Audio Spatializer 1.18.3](https://docs.unity.cn/Packages/com.unity.google.resonance.audio@1.18/manual/index.html)  
+  Licensed under the Unity Companion License for Unity-dependent projects--see [Unity Companion License](https://unity.com/legal/licenses/unity-companion-license).  
+  Copyright © 2018 Unity Technologies ApS
+
 - [System.Memory 4.5.3](https://www.nuget.org/packages/System.Memory/4.5.3)  
   Licensed under the MIT License. Copyright (c) .NET Foundation and Contributors
 

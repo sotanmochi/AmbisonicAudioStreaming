@@ -31,6 +31,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.google.resonance.audio": {
+      "version": "1.18.3",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.ide.rider": {
       "version": "2.0.7",
       "depth": 0,
@@ -124,7 +131,9 @@
       "version": "file:AmbisonicAudioStreaming",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {}
+      "dependencies": {
+        "com.unity.google.resonance.audio": "1.18.3"
+      }
     },
     "org.nuget.system.buffers": {
       "version": "4.4.0",

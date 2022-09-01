@@ -1,10 +1,13 @@
 {
     "name": "jp.sotanmochi.ambisonicaudiostreaming",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "displayName": "AmbisonicAudioStreaming",
     "license": "MIT",
     "unity": "2020.3",
     "author": { "name": "Soichiro Sugimoto" },
+    "dependencies": {
+        "com.unity.google.resonance.audio": "1.18.3"
+    },
     "samples": [
         {
             "displayName": "ImmersiveVideoPlayer",
