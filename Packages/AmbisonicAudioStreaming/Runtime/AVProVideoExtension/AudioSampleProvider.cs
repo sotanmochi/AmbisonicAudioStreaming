@@ -17,7 +17,8 @@ namespace AmbisonicAudioStreaming.AVProVideoExtension
     {
 		[SerializeField] MediaPlayer _mediaPlayer = null;
         [SerializeField] ChannelType _outputChannelType = ChannelType.Ambisonics;
-        [SerializeField] uint _bufferSampleCount = 4096; 
+        [SerializeField] uint _bufferSampleCount = 4096;
+        [SerializeField] ushort _inputChannelCount = 6;
 
         public event Action OnPrepared;
         public event AudioFrameSampledEventHandler OnAudioSampled;
@@ -90,7 +91,7 @@ namespace AmbisonicAudioStreaming.AVProVideoExtension
                 return;
             }
 
-            var channelCount = (ushort)_mediaControl.GetAudioChannelCount();
+            var channelCount = (_inputChannelCount > 0) ? _inputChannelCount : (ushort)_mediaControl.GetAudioChannelCount();
             // UnityEngine.Debug.Log($"UpdateAudio.ChannelCount: {channelCount}");
 
             if (channelCount <= 0)

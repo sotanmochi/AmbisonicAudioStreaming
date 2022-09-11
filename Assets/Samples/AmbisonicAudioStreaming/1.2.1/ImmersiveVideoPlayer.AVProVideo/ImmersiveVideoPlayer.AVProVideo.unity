@@ -1005,6 +1005,7 @@ MonoBehaviour:
   _mediaPlayer: {fileID: 1384563495}
   _outputChannelType: 4
   _bufferSampleCount: 8192
+  _inputChannelCount: 6
 --- !u!114 &1384563498
 MonoBehaviour:
   m_ObjectHideFlags: 0
