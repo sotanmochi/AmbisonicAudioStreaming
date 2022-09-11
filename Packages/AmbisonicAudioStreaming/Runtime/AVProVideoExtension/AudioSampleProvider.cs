@@ -95,6 +95,7 @@ namespace AmbisonicAudioStreaming.AVProVideoExtension
 
             if (channelCount <= 0)
             {
+                UnityEngine.Debug.LogError($"[AmbisonicAudioStreaming] AudioChannelCount: {channelCount}");
                 return;
             }
 
